@@ -44,7 +44,7 @@ do
         int second = Convert.ToInt32(Console.ReadLine());
         if (second == 0)
         {
-            Console.WriteLine("На ноль нельзя делить у меня калькулятор без комлпексных чисел))");
+            Console.WriteLine("На ноль нельзя делить))");
         }
         else
         {
@@ -63,14 +63,7 @@ do
     {
         Console.WriteLine("Введите число");
         int first = Convert.ToInt32(Console.ReadLine());
-        if (first < 0)
-        {
-            Console.WriteLine("Квадратный корень можно найти только из положительного числа");
-        }
-        else
-        {
-            Console.WriteLine("Квадратный корень из числа " + first + " = " + (Math.Sqrt(first)));
-        }
+        Console.WriteLine("Квадратный корень из числа " + first + " = " + (Math.Sqrt(first)));
     }
     else if (nomer_zadachi == 7)
     {
@@ -87,19 +80,13 @@ do
         {
 
             {
-
-
                 for (int i = 1; i <= first; i++)
                 {
                     faktrl *= i;
                 }
             }
             Console.WriteLine("Факториал числа " + first + " = " + faktrl);
-        }
-        else
-        {
-            Console.WriteLine("Я не знаю как найти факториал из нецелого числа");
-        }
+            }
     }
     else if (nomer_zadachi != 9)
     {
